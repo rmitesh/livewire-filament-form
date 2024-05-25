@@ -1,9 +1,9 @@
 <main class="mt-6 w-full">
     <div class="grid gap-6 lg:grid-cols-1">
         <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
-            <form class="w-full mx-auto max-w-xl" method="POST" wire:submit.prevent="save">
+            <form class="w-full mx-auto max-w-xl" method="POST" wire:submit.prevent="save" autocomplete="off">
                 @csrf
-                <h4 class="text-4xl font-bold mb-4 text-center">Contact us</h4>
+                <h4 class="text-4xl font-bold mb-4 text-center text-black">Livewire Contact us</h4>
 
                 @if(session('status'))
                     <div class="bg-success-600 p-4 rounded-lg text-white mb-4">
